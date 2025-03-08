@@ -7,6 +7,7 @@
     --primary-grey : #DCDEE9;
     --light-pink :#F0E4F3;
     --primary-red : #F0517A;
+    --body-background : #F3F9FF;
 }
 
 
@@ -264,6 +265,263 @@ button{
     margin-top: 35px;
 }
 
+/*===progress-element===*/
+
+progress {
+  opacity: 0;
+}
+
+.progress-element {
+  width: 200px;
+  margin: 0 0 10px;
+}
+
+.progress-container {
+  position: relative;
+  height: 4px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.progress-element--red .progress-container{
+    background: #FFD7E1;
+}
+.progress-element--yellow .progress-container{
+    background: #ffe6c2;
+}
+.progress-element--green .progress-container{
+    background: #d1f6f2;
+}
+.progress-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+}
+.progress-element--red .progress-container::before {
+  background: #F92D61;
+}
+.progress-element--yellow .progress-container::before{
+  background: #FF9800;
+}
+.progress-element--green .progress-container::before{
+  background: #0FCFBD;
+}
+.progress-element--red .progress-container::before {
+  animation: progress-red 1s ease-in forwards;
+}
+.progress-element--yellow .progress-container::before{
+animation: progress-yellow 1s ease-in forwards;
+}
+.progress-element--green .progress-container::before{
+animation: progress-green 1s ease-in forwards;
+}
+@keyframes progress-red {
+  to {
+    width: 16%;
+  }
+}
+
+@keyframes progress-yellow {
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes progress-green {
+  to {
+    width: 74%;
+  }
+}
+.relative{
+    position: relative;
+}
+.py-60{
+    padding-top:60px;
+    padding-bottom: 60px
+}
+
+
+.prgress-percent-block{
+    padding: 42px 30px;
+    background: var(--primary-white);
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px 0px #00000d;
+    height: 300px;
+}
+.wrapper--bg-image_right{
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    z-index: -1;
+}
+.grid{
+    display: grid;
+    row-gap: 100px;
+    column-gap:40px;
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
+}
+.text-container{
+    grid-column: span 1;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px 0px #00000d;
+    background: var(--primary-white);
+}
+.graph-column img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.pt-96{
+    padding-top: 96px;
+}
+.pt-33{
+    padding-top: 33px;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #203C65;
+    margin-bottom: 40px;
+}
+.card{
+    border: 1px solid #B7CDEE;
+    background: var(--primary-white);
+    padding: 60px 30px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    transition: all ease-in-out 300ms;
+}
+.card:hover{
+    box-shadow: 0px 0px 30px 0px #5DFFF080;
+}
+.card:hover .card-title{
+    color: #0FCFBD;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-image{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fafbfe;
+    border-radius: 50%;
+}
+.wrapper-blue{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 251px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #365B91;
+}
+.wrapper-blue p{
+    color: var(--primary-white);
+}
+#more {display: none;}
+.wrapper-red{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #DE1252;
+    width: 242px;
+    margin: 0 auto;
+    background: #ffebf0;
+}
+.wrapper-red p{
+    color: #F0517A;
+}
+.gap-55{
+    gap: 55px;
+}
+.wrapper-yellow{
+    padding: 10px 15px;
+    border: 1px solid #FFB74D;
+    border-radius: 5px;
+    margin: 50px auto 15px auto;
+    background: #ffefd8;
+}
+.wrapper-yellow p{
+    color:#E68127;
+}
+
+.comment-col{
+    box-shadow: 0px 4px 30px 0px #00000D;
+    background: var(--primary-white);
+    border-radius: 20px;
+    max-height: 673px;
+    overflow: hidden;
+}
+.comment-col::after{
+    content: '';
+    width: 100%;
+    height: 147px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F3F9FF 71.87%);
+;
+    display: block;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+.gap-12{
+    gap:12px;
+}
+.p-35{
+    padding:35px;
+}
+.comment-block{
+    padding: 30px;
+    background: var(--body-background);
+    border: 1px solid #E2E2E2;
+}
+.all-result{
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    transform: translate(-50%,50%);
+    padding:12px 50px;
+    background: var(--primary-white);
+    border: 1px solid #E3E3E3;
+    z-index:1; 
+}
+.all-result:hover{
+    background: var(--body-background)
+}
+.gap-10{
+    gap:10px;
+}
+.grid.gap-40{
+    gap:40px;
+}
+.reaction-block{
+    height: 186px;
+    border: 1px solid #E9E9E9;
+    background: var(--primary-white);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.review-block{
+    background: var(--primary-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0px #00000D;
+    margin-top: 27px;
+}
+.justify-center{
+    justify-content: center;
+}
 /* ====media query ===== */
 @media only screen and (min-width: 768px){
     .search__form,
@@ -274,13 +532,11 @@ button{
     input[type="search"]{
         max-width: 240px;
     }
-    /* .container{
-        max-width: 650px;
-        margin: 0 auto;
-    } */
     .right-column{
         justify-content: flex-end;
     }
+  
+   
 }
 @media only screen and (min-width: 1024px){
     /* .container{
@@ -315,6 +571,39 @@ button{
         height: auto;
         overflow: hidden;
     }
+    .wrapper--bg-image_right{
+        width: auto;
+    }
+    .ml-auto{
+    margin-left: auto;
+    }
+    .mr-0{
+        margin-right: 0;
+    }
+    .flex{
+        flex-wrap: nowrap;
+    }
+    .w-70{
+        width: 70%;
+    }
+    .text-container{
+     padding: 30px 60px;
+    }
+    .grid{
+        grid-template-columns: repeat( auto-fill, minmax(320px, 1fr));
+    }
+       .card{
+        padding : 80px 68px;
+    }
+    .review-block{
+     padding: 32px 60px 45px 39px;
+    }
+    .comment-block{
+     padding: 37px 34px 30px 86px;
+    }
+      .wrapper--bg-image_right{
+        position: absolute;
+    }
 }
 @media only screen and (min-width: 1440px){
     .container{
@@ -328,6 +617,9 @@ button{
     .col-4{
         flex-basis: 30%;
         padding: 55px 53px 37px;
+    }
+    .text-container{
+        grid-column: span 3;
     }
   
 }
