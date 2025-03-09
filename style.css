@@ -25,7 +25,7 @@ body{
 h1{
     font-weight: 600;
     font-size: 36px;
-    line-height: 24px;
+    line-height: 40px;
 }
 h2{
     font-weight: 600;
@@ -280,7 +280,6 @@ progress {
 }
 
 .progress-element {
-  width: 200px;
   margin: 0 0 10px;
 }
 
@@ -325,6 +324,27 @@ progress {
 .color-red p{
     color: #F92D61;
     font-weight: 600;
+}
+.lh-30{
+    line-height: 30px;
+}
+.text-center{
+    text-align: center;
+}
+
+.progress-percent-block .percent-number{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 100%;
+}
+.percent-number.red{
+    color: #F92D61;
+}
+.percent-number.yellow{
+    color: #FF9800;
+}
+.percent-number.green{
+    color: #0FCFBD;
 }
 .text-green{
     color: #0FCFBD;
@@ -418,14 +438,17 @@ animation: progress-green-25 1s ease-in forwards;
     padding-top:60px;
     padding-bottom: 60px
 }
+.progress-percent-block.flex{
+    flex-wrap: nowrap;
+}
 
-
-.prgress-percent-block{
+.progress-percent-block{
     padding: 42px 30px;
     background: var(--primary-white);
     border-radius: 20px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    height: 300px;
+    min-height: 300px;
+    text-align: center;
 }
 .wrapper--bg-image_right{
     width: 100%;
@@ -460,14 +483,14 @@ animation: progress-green-25 1s ease-in forwards;
 .card-title{
     font-size: 20px;
     font-weight: 600;
-    line-height: 15px;
+    line-height: 24px;
     color: #203C65;
     margin-bottom: 40px;
 }
 .card{
     border: 1px solid #B7CDEE;
     background: var(--primary-white);
-    padding: 60px 30px;
+    padding: 75px 30px;
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -540,6 +563,11 @@ animation: progress-green-25 1s ease-in forwards;
     max-height: 673px;
     overflow: hidden;
 }
+.comment-col .flex{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .flex.align-inherit{
     align-items: inherit;
 }
@@ -592,6 +620,7 @@ animation: progress-green-25 1s ease-in forwards;
     padding:12px;
     background: var(--primary-white);
     border: 1px solid #E3E3E3;
+    border-radius:4px;
     z-index:1; 
 }
 .all-result:hover{
@@ -646,6 +675,9 @@ animation: progress-green-25 1s ease-in forwards;
 .review-wrapper .progress-container{
     height: 8px;
 }
+  .flex.flex-col{
+        flex-direction: column;
+    }
 /* ====media query ===== */
 @media only screen and (min-width: 768px){
     .search__form,
@@ -659,7 +691,10 @@ animation: progress-green-25 1s ease-in forwards;
     .right-column{
         justify-content: flex-end;
     }
-  
+  .flex.flex-wrap{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
    
 }
 @media only screen and (min-width: 1024px){
@@ -704,11 +739,8 @@ animation: progress-green-25 1s ease-in forwards;
     .mr-0{
         margin-right: 0;
     }
-    .flex{
-        flex-wrap: nowrap;
-    }
-    .w-70{
-        width: 70%;
+    .w-77{
+        width: 77%;
     }
     .text-container{
      padding: 30px 60px;
@@ -734,12 +766,30 @@ animation: progress-green-25 1s ease-in forwards;
     .comment-block .text-green {
         margin-left: -41px;
     }
+     .flex{
+        flex-wrap: nowrap;
+    }
+    .comment-col .flex {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .comment-col .text-center{
+        text-align: left;
+    }
 }
 @media only screen and (min-width: 1440px){
+     .flex.flex-wrap{
+        flex-wrap: nowrap;
+        }
+     .graph-column img{
+        overflow: visible;
+    }
     .container{
         max-width: 1350px;
         margin: 0 auto;
     }
+   
     .col-8{
         flex-basis: 67%;
         padding: 48px 65px 37px;
