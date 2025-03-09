@@ -193,6 +193,17 @@ button{
 .justify-center{
     justify-content: center;
 }
+.p-16{
+    padding: 16px;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.i-wrapper{
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+}
 /* ===header section=== */
 
 nav{
@@ -641,7 +652,8 @@ animation: progress-green-25 1s ease-in forwards;
     border-radius:4px;
     z-index:1; 
 }
-.all-result:hover{
+.all-result:hover,
+.bg-body{
     background: var(--body-background)
 }
 
@@ -710,10 +722,10 @@ animation: progress-green-25 1s ease-in forwards;
    
 }
 @media only screen and (min-width: 1024px){
-    /* .container{
-        max-width: 992px;
-        margin: 0 auto;
-    } */
+  .i-wrapper{
+      justify-content: flex-start;
+      text-align: left;
+  }
     .row{
         gap: 0;
     }
