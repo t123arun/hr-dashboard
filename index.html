@@ -172,16 +172,19 @@
         </section>
         <section class="container flex gap-55 py-60">
             <div class="comment-col relative">
-                <div class="flex p-35">
-                    <div class="flex gap-10">
-                        <img src="assets/heart.png"/>
-                        <p>Great things to hear</p>
+                <div class="p-35">
+                    <div class="flex pb-10">
+                        <div class="flex gap-10">
+                            <img src="assets/heart.png"/>
+                            <p class="font-20">Great things to hear</p>
+                        </div>
+                        <p class="text-green">152 Comments</p>
                     </div>
-                    <p>152 Comments</p>
+                    <p>Comments from employees indicating why they want to stay on the long term within your company or why they would recommend it.</p>
                 </div>
                 <div class="comment-block">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                    <button class="read-more-btn">Read more</button>
                 </div>
                 <div class="comment-block">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -195,16 +198,19 @@
                 <button class="all-result">View All results</button>
             </div>
              <div class="comment-col relative">
-                <div class="flex p-35">
-                    <div class="flex gap-10">
-                        <img src="assets/sad-face.png"/>
-                        <p>Sad things to hear</p>
+                <div class="p-35">
+                    <div class="flex pb-10">
+                        <div class="flex gap-10">
+                            <img src="assets/sad-face.png"/>
+                            <p class="font-20">Sad things to hear</p>
+                        </div>
+                        <p class="text-green">152 Comments</p>
                     </div>
-                    <p>152 Comments</p>
+                    <p>Comments from employees indicating why they want to stay on the long term within your company or why they would recommend it.</p>
                 </div>
                 <div class="comment-block">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                    <button class="read-more-btn">Read more</button>
                 </div>
                 <div class="comment-block">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -221,30 +227,30 @@
         <section class="container">
             <h2>Survey feedback satisfaction</h2>
             <p>We asked your employees about their satisfaction regarding the frequency at which their manager or the company is giving feedback on the survey.</p>
-            <div class="flex gap-55 py-60">
+            <div class="flex gap-55 py-60 align-inherit">
                 <div>
                     <div class="flex gap-12 justify-center">
-                        <div class="reaction-block">
+                        <div class="reaction-block red">
                             <img src="assets/unsatisfactory.png"/>
                             <p>Very unsatisfied</p>
                             <p>16%</p>
                         </div>
-                        <div class="reaction-block">
+                        <div class="reaction-block red">
                             <img src="assets/unsatisfactory-icon.png"/>
                             <p>Very unsatisfied</p>
                             <p>16%</p>
                         </div>
-                        <div class="reaction-block">
+                        <div class="reaction-block neutral">
                             <img src="assets/neutral.png"/>
                             <p>Very unsatisfied</p>
                             <p>16%</p>
                         </div>
-                        <div class="reaction-block">
+                        <div class="reaction-block green">
                             <img src="assets/satisfied.png"/>
                             <p>Very unsatisfied</p>
                             <p>16%</p>
                         </div>
-                        <div class="reaction-block">
+                        <div class="reaction-block green">
                             <img src="assets/very-satisfied.png"/>
                             <p>Very unsatisfied</p>
                             <p>16%</p>
@@ -252,7 +258,7 @@
                     </div>
                     <div class="review-block">
                         <p class="font-18">We asked what would be the ideal frequency to the unsatisfied and neutral employees. Here’s what they’ve said:</p>
-                        <div class="review-wrapper">
+                        <div class="review-wrapper color-red">
                             <div class="flex">
                                 <p>Monthly review</p>
                             <p>40%</p>
@@ -263,34 +269,34 @@
                                 </div>
                                 </div>
                         </div>
-                        <div class="review-wrapper">
+                        <div class="review-wrapper color-blue">
                             <div class="flex">
-                                <p>Monthly review</p>
+                                <p>Weekly touch-up</p>
                             <p>10%</p>
                             </div>
-                             <div class="progress-element progress-element--red">
+                             <div class="progress-element progress-element--blue">
                                 <div class="progress-container">
                                     <progress max="100" value="10">10%</progress>
                                 </div>
                                 </div>
                         </div>
-                        <div class="review-wrapper">
+                        <div class="review-wrapper color-green">
                             <div class="flex">
-                                <p>Monthly review</p>
+                                <p>Yearly review</p>
                             <p>25%</p>
                             </div>
-                             <div class="progress-element progress-element--red">
+                             <div class="progress-element progress-element--green">
                                 <div class="progress-container">
                                     <progress max="100" value="25">25%</progress>
                                 </div>
                                 </div>
                         </div>
-                        <div class="review-wrapper">
-                            <div class="flex">
-                                <p>Monthly review</p>
+                        <div class="review-wrapper color-green">
+                            <div class="flex ">
+                                <p>Yearly review</p>
                             <p>25%</p>
                             </div>
-                             <div class="progress-element progress-element--red">
+                             <div class="progress-element progress-element--green">
                                 <div class="progress-container">
                                     <progress max="100" value="25">25%</progress>
                                 </div>
@@ -298,45 +304,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-col relative">
-                <div class="flex p-35">
-                    <div class="flex gap-10">
+                <div class="comment-col relative body-button">
+                <div class="flex p-35 flex-start">
+                    <div class="flex gap-10 flex-start">
                         <img src="assets/comment-icon.png"/>
-                        <p>What did they say about the survey review?</p>
+                        <p class="font-20">What did they say about the survey review?</p>
                     </div>
-                    <p>152 Comments</p>
+                    <p class="text-green">152 Comments</p>
                 </div>
                 <div class="comment-block">
-                    <p>Within the last 30 days</p>
+                    <p class="text-green">Within the last 30 days</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <button  class="read-more-btn">Read more</button>
+                </div>
+                <div class="comment-block">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="comment-block">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-                <div class="comment-block">
-                    <p>Octobre 2021</p>
+                    <p class="text-green">October 2021</p>
                 </div>
                 <button class="all-result">View All results</button>
             </div>
             </div>
         </section>
     </main>
-    <script>
-        function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
-
-        if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read more";
-            moreText.style.display = "none";
-        } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Read less";
-            moreText.style.display = "inline";
-        }
-        }
-    </script>
 </body>
 </html>
